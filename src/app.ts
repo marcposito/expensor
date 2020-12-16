@@ -1,3 +1,9 @@
-import { start } from './server';
+import { startServer } from './server';
+import performDatabasesConnections from "./infrastructure/database/connectionHandler";
 
-start();
+const bootstrapApplication = async () => {
+    await performDatabasesConnections();
+    startServer();
+}
+
+bootstrapApplication();
