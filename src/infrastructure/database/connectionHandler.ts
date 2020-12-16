@@ -1,6 +1,6 @@
 import MySQLConnection from "./MySQLConnection";
 
- const performDatabasesConnections = async () => {
+ const performDatabaseConnections = async () => {
     try{
         await Promise.all([MySQLConnection.connect()]);
     }catch (e) {
@@ -8,4 +8,4 @@ import MySQLConnection from "./MySQLConnection";
     }
 }
 
-export default performDatabasesConnections;
+export default performDatabaseConnections;

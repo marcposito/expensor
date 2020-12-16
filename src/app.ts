@@ -1,8 +1,8 @@
 import { startServer } from './server';
-import performDatabasesConnections from "./infrastructure/database/connectionHandler";
+import performDatabaseConnections from "./infrastructure/database/connectionHandler";
 
 const bootstrapApplication = async () => {
-    await performDatabasesConnections();
+    await performDatabaseConnections();
     startServer();
 }
 
