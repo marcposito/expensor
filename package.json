@@ -1,0 +1,32 @@
+{
+  "name": "expensor",
+  "version": "1.0.0",
+  "description": "Expensor is a service where users can create expenses lists.",
+  "main": "src/app.ts",
+  "scripts": {
+    "start": "node dist/src/app.js",
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.1",
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.14",
+    "typescript": "^4.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcposito/expensor.git"
+  },
+  "author": "Posito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcposito/expensor/issues"
+  },
+  "homepage": "https://github.com/marcposito/expensor#readme"
+}
